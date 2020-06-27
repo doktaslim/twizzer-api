@@ -13,9 +13,6 @@ db();
 
 const app = express();
 
-app.set('view engine', 'html');
-app.engine('html', require('hbs').__express);
-
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
